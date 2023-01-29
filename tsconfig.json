@@ -1,0 +1,20 @@
+{
+  "extends": "fastify-tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "src",
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@entity/*": ["entity/*"],
+      "@controllers/*": ["controllers/*"]
+    }
+  },
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullPaths": true
+  },
+  "include": ["src/**/*.ts", "src"]
+}
